@@ -90,10 +90,6 @@ Début
 
 Fin
 
-
-
-
-
 exercice 4.5
 
 la variable Age en entier
@@ -112,3 +108,5 @@ Début
         ecrire "Vous ne payez pas d'impôt"
 
 Fin
+
+Exercice 4.6
