@@ -22,13 +22,93 @@ Début
     lire minutes
     minutes<-minutes+1
 
-    Si minutes > 60
+    Si minutes >= 60
         alors minutes<-minutes-60
               Heure<-Heure+1
-            Si Heure > 24
-                alors Heure<-Heure-24
+            Si Heure > 23
+                alors Heure<-Heure-23
 
     ecrire "Dans une minutes, il sera " heure " heure(s) " minutes
 Fin
 
 exercice 4.3
+
+les variables Heure, minutes , secondes en entier
+Début
+    ecrire "Quelle l'heure est-il?"
+    lire Heure
+    ecrire "Combien de minutes?"
+    lire minutes
+    ecrire "Combien de secondes?"
+    lire secondes
+
+    secondes<-secondes+1
+
+    Si secondes>=60
+        secondes<-secondes-60
+        minutes<-minutes+1
+            Si minutes >= 60
+                alors minutes<-minutes-60
+                      Heure<-Heure+1
+                    Si Heure > 24
+                        alors Heure<-Heure-24
+
+    ecrire "Dans une seconde, il sera " heure " heure(s) " minutes " minute(s) et " secondes " seconde(s)"
+Fin
+
+Exercices 4.4
+
+les variables nbPhotocopie, photocopie en entier
+la variable Prix, Tarifs en décimal
+
+photocopie<-0
+Prix<-0
+Tarifs<-0.10
+
+Début
+    ecrire "Combien de photocopie voulez-vous"
+    lire nbPhotocopie
+
+    tantque nbPhotocopie > 0
+        photocopie<-Photocopie+1
+        
+
+        Si photocopie<10
+            prix<-prix+0.10
+
+        SinonSI photocopie>30
+            prix<-prix+0.08
+
+        Sinon
+            prix<-prix+0.09
+        FinSi
+
+        nbPhotocopie<-nbPhotocopie-1
+    finTantQue
+
+    ecrire "Vous devez payer : " Prix "€"
+
+Fin
+
+
+
+
+
+exercice 4.5
+
+la variable Age en entier
+la variable Sexe en booleen (féminin/Masculin)
+Début
+    ecrire "Quelle est votre âge? :"
+    lire Age
+    ecrire "Quelle est votre sexe? F\M"
+    lire Sexe
+
+    Si Sexe M & Age > 20
+        ecrire "les hommes paient l'impôt."
+    SinonSi Sexe F & age > 18 & age < 35
+        ecrire "les femmes paient l’impôt si elles ont entre 18 et 35 ans"
+    Sinon
+        ecrire "Vous ne payez pas d'impôt"
+
+Fin
