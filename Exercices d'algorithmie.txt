@@ -1,0 +1,34 @@
+Exercices d'algorithmie
+
+exercice 4.1
+
+les variables Toto, Tutu en entier
+la variable Tata en chaine de caractère
+//initialiser les variables
+Début
+    Si Toto +4 > Tutu ou !Tata = "OK"
+        alors Tutu<- Tutu-1
+    Sinon
+        Alors Tutu<- Tutu+1
+    FinSi
+Fin
+
+exercie 4.2
+les variables Heure, minutes en entier
+Début
+    ecrire "Quelle l'heure est-il?"
+    lire Heure
+    ecrire "Combien de minutes?"
+    lire minutes
+    minutes<-minutes+1
+
+    Si minutes > 60
+        alors minutes<-minutes-60
+              Heure<-Heure+1
+            Si Heure > 24
+                alors Heure<-Heure-24
+
+    ecrire "Dans une minutes, il sera " heure " heure(s) " minutes
+Fin
+
+exercice 4.3
